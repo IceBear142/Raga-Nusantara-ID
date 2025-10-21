@@ -820,28 +820,3 @@ function setupEventListeners() {
         }
     });
 }
-
-// Initialize the game when DOM is loaded
-
-document.addEventListener('DOMContentLoaded', initGame);
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyAee1bH75e9q9e_PLNzL7zyCAO2eU_GEms",
-  authDomain: "raga-nusantara-id-22a87.firebaseapp.com",
-  projectId: "raga-nusantara-id-22a87",
-  storageBucket: "raga-nusantara-id-22a87.firebasestorage.app",
-  messagingSenderId: "104670483437",
-  appId: "1:104670483437:web:51fcd131152358736d4de4",
-  measurementId: "G-0GBY6H6JDN"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
